@@ -1,0 +1,606 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" type="">
+
+  <title> TYSBE </title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- font awesome style -->
+  <link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="{% static 'css/responsive.css' %}" rel="stylesheet" />
+
+</head>
+
+<body>
+
+  <div class="hero_area">
+
+    <div class="hero_bg_box">
+      <div class="bg_img_box">
+        <img src="{% static 'images/hero-bg.png' %}" alt="">
+      </div>
+    </div>
+
+    <!-- header section strats -->
+    {% include 'page/header.html' %}
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class="slider_section" id="top">
+      <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-6 ">
+                  <div class="detail-box">
+                    <h1>
+                      Mobile <br>
+                      Booking
+                    </h1>
+                    <p>
+                      Book appointments effortlessly with our mobile app! Enjoy a seamless experience scheduling services anytime, anywhere—saving time and keeping you organized.
+                    </p>
+                    <div class="btn-box">
+                      <a href="" class="btn1">
+                        Read More
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="img-box">
+                    <img src="{% static 'images/slider-img.png' %}" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-6 ">
+                  <div class="detail-box">
+                    <h1>
+                      Easy & Secure <br>
+                      Payment
+                    </h1>
+                    <p>
+                      Make payments with ease and confidence using Stripe! Our app ensures fast, secure, and hassle-free transactions, so you can focus on what matters most.
+                    </p>
+                    <div class="btn-box">
+                      <a href="" class="btn1">
+                        Read More
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="img-box">
+                    <img src="{% static 'images/slider-img.png' %}" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-6 ">
+                  <div class="detail-box">
+                    <h1>
+                      Tested & Trusted <br>
+                      Artisans
+                    </h1>
+                    <p>
+                      Connect with trusted and vetted artisans! Our app ensures quality and reliability, bringing skilled professionals right to your doorstep.
+                    </p>
+                    <div class="btn-box">
+                      <a href="" class="btn1">
+                        Read More
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="img-box">
+                    <img src="{% static 'images/slider-img.png' %}" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ol class="carousel-indicators">
+          <li data-target="#customCarousel1" data-slide-to="0" class="active"></li>
+          <li data-target="#customCarousel1" data-slide-to="1"></li>
+          <li data-target="#customCarousel1" data-slide-to="2"></li>
+        </ol>
+      </div>
+
+    </section>
+    <!-- end slider section -->
+  </div>
+
+
+  <!-- service section -->
+
+  <section class="service_section layout_padding" id="service">
+    <div class="service_container">
+      <div class="container">
+        <div class="heading_container heading_center">
+          <h2>
+            Our <span>Services</span>
+          </h2>
+          <p>
+            Our service is designed to make your life easier by providing a seamless platform for booking trusted artisans, managing appointments, and making secure payments. We prioritize quality, reliability, and convenience, ensuring a hassle-free experience every time.
+          </p>
+        </div>
+        <div class="row d-flex align-items-stretch">
+          <div class="col-md-3 d-flex">
+            <div class="box d-flex flex-column">
+              <div class="img-box">
+                <img src="{% static 'images/ss1.png' %}" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Mobile Massage
+                </h5>
+                <p>
+                  Relax and rejuvenate with mobile massage services. Book skilled therapists to your doorstep for a professional, soothing experience tailored to your comfort and schedule.
+                </p>
+                <a href="">
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 d-flex">
+            <div class="box d-flex flex-column">
+              <div class="img-box">
+                <img src="{% static 'images/ss2.png' %}" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Mobile Braiding
+                </h5>
+                <p>
+                  Get flawless braids at your convenience! Book expert stylists to your doorstep for professional mobile braiding services that fit your style and schedule.
+                </p>
+                <a href="">
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 d-flex">
+            <div class="box d-flex flex-column">
+              <div class="img-box">
+                <img src="{% static 'images/ss3.png' %}" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  247 Towing
+                </h5>
+                <p>
+                  Available 24/7, our towing service provides fast and reliable assistance anytime, anywhere. Count on us to get you back on the road safely.
+                </p>
+                <a href="">
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 d-flex">
+            <div class="box d-flex flex-column">
+              <div class="img-box">
+                <img src="{% static 'images/ss4.png' %}" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Mobile Car Wash
+                </h5>
+                <p>
+                  Experience convenience with our mobile car wash! Professional cleaning services brought to your location, keeping your vehicle spotless without disrupting your busy schedule.
+                </p>
+                <a href="">
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="btn-box">
+          <a href="{% url 'service' %}">
+            View All
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>  
+
+  <!-- end service section -->
+
+
+  <!-- about section -->
+
+  <section class="about_section layout_padding" id="about">
+    <div class="container  ">
+      <div class="heading_container heading_center">
+        <h2>
+          About <span>Us</span>
+        </h2>
+        <p>
+          We are dedicated to providing top-quality services through a seamless, convenient platform, connecting you with trusted professionals for all your needs, anytime, anywhere.
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-md-6 ">
+          <div class="img-box">
+            <img src="{% static 'images/about-img.png' %}" alt="">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="detail-box">
+            <h3>
+              We Are TYSBE
+            </h3>
+            <p>
+              At TYSBE, we strive to deliver exceptional services that make your life easier. Our platform connects you with trusted professionals, ensuring a reliable and seamless experience every time. Whether it's booking an appointment, making secure payments, or accessing expert services, we’re here to support your needs with convenience and care.
+            </p>
+            <a href="">
+              Read More
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end about section -->
+
+  <!-- why section -->
+
+  <section class="why_section layout_padding" id="get-started">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+          Get <span>Started</span>
+        </h2>
+      </div>
+      <div class="why_container">
+        
+        <p class="text-center">
+          Whether you're a Customer looking to receive top-notch services or an Artisan ready to share your skills, getting started with TYSBE booking is simple!
+        </p>
+
+        <h5 class="font-weight-bold">
+          For <span style="color: #e400f0;">Customers</span>
+        </h5>
+        <ol>
+          <li>
+            <h5 class="font-weight-bold">Download and Register</h5>
+          </li>
+          <p>
+            Install the app from the App Store (iOS) or Google Play Store (Android) and sign up to create your account as a customer.
+          </p>
+
+          <li>
+            <h5 class="font-weight-bold">Explore Services</h5>
+          </li>
+          <p>
+            Browse our wide range of services, from mobile massage and braiding to 24/7 towing and car washing.
+          </p>
+
+          <li>
+            <h5 class="font-weight-bold">Book and Pay</h5>
+          </li>
+          <p>
+            Schedule a service at your convenience, confirm the details, wait for an artisan to accept and pay securely using Stripe.
+          </p>
+
+          <li>
+            <h5 class="font-weight-bold">Receive and Review</h5>
+          </li>
+          <p>
+            Enjoy the service at your location and leave a review to share your experience.
+          </p>
+        </ol>
+
+        <h5 class="font-weight-bold">
+          For <span style="color: #e400f0;">Artisans</span>
+        </h5>
+        <ol>
+          <li>
+            <h5 class="font-weight-bold">Download and Sign Up</h5>
+          </li>
+          <p>
+            Install the app and create an Artisan account by providing details about your skills and services.
+          </p>
+
+          <li>
+            <h5 class="font-weight-bold">Set Availability</h5>
+          </li>
+          <p>
+            Update your profile with your work schedule and service areas to attract potential customers.
+          </p>
+
+          <li>
+            <h5 class="font-weight-bold">Accept Booking</h5>
+          </li>
+          <p>
+            Receive service requests, confirm bookings, and provide exceptional services to customers.
+          </p>
+
+          <li>
+            <h5 class="font-weight-bold">Get Paid</h5>
+          </li>
+          <p>
+            Receive secure payments directly to your bank account after completing each service.
+          </p>
+        </ol>
+
+      </div>
+      <div class="btn-box">
+        <a href="">
+          Read More
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- end why section -->
+
+  <!-- team section -->
+  <section class="team_section layout_padding" id="faq">
+    <div class="container-fluid">
+      <div class="heading_container heading_center">
+        <h2 class="">
+          <span>FAQ</span>
+        </h2>
+        <p>Find quick answers to common questions in our FAQ section. Whether you're a customer or an artisan, get the information you need to navigate our app effortlessly.</p>
+      </div>
+
+      <div class="team_container">
+        <div class="row">
+
+          <div class="col-lg-3 col-sm-6">
+            <div class="faq-item">
+              <div class="box">
+                <div class="detail-box">
+                  <div class="faq-question">
+                    <h5>
+                      Who is Joseph Brown?
+                    </h5>
+                    <i class="fa fa-question-circle" aria-hidden="true"></i>
+                  </div>
+                  <div class="faq-answer">
+                    <p>
+                      Joseph Brown is our Marketing Head, leading strategies to drive business growth and brand awareness with innovative and customer-centric campaigns.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6">
+            <div class="faq-item">
+              <div class="box">
+                <div class="detail-box">
+                  <div class="faq-question">
+                    <h5>
+                      Who is Joseph Brown?
+                    </h5>
+                    <i class="fa fa-question-circle" aria-hidden="true"></i>
+                  </div>
+                  <div class="faq-answer">
+                    <p>
+                      Joseph Brown is our Marketing Head, leading strategies to drive business growth and brand awareness with innovative and customer-centric campaigns.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6">
+            <div class="faq-item">
+              <div class="box">
+                <div class="detail-box">
+                  <div class="faq-question">
+                    <h5>
+                      Who is Joseph Brown?
+                    </h5>
+                    <i class="fa fa-question-circle" aria-hidden="true"></i>
+                  </div>
+                  <div class="faq-answer">
+                    <p>
+                      Joseph Brown is our Marketing Head, leading strategies to drive business growth and brand awareness with innovative and customer-centric campaigns.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6">
+            <div class="faq-item">
+              <div class="box">
+                <div class="detail-box">
+                  <div class="faq-question">
+                    <h5>
+                      Who is Joseph Brown?
+                    </h5>
+                    <i class="fa fa-question-circle" aria-hidden="true"></i>
+                  </div>
+                  <div class="faq-answer">
+                    <p>
+                      Joseph Brown is our Marketing Head, leading strategies to drive business growth and brand awareness with innovative and customer-centric campaigns.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="btn-box">
+        <a href="{% url 'faq' %}">
+          Read More
+        </a>
+      </div>
+
+    </div>
+  </section>
+  <!-- end team section -->
+
+
+  <!-- client section -->
+
+  <section class="client_section layout_padding" id="customer">
+    <div class="container">
+      <div class="heading_container heading_center psudo_white_primary mb_45">
+        <h2>
+          What says our <span>Customers</span>
+        </h2>
+      </div>
+      <div class="carousel-wrap ">
+        <div class="owl-carousel client_owl-carousel">
+          <div class="item">
+            <div class="box">
+              <div class="img-box">
+                <img src="{% static 'images/client1.jpg' %}" alt="" class="box-img">
+              </div>
+              <div class="detail-box">
+                <div class="client_id">
+                  <div class="client_info">
+                    <h6>
+                      LusDen
+                    </h6>
+                    <p>
+                      magna aliqua. Ut
+                    </p>
+                  </div>
+                  <i class="fa fa-quote-left" aria-hidden="true"></i>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box">
+              <div class="img-box">
+                <img src="{% static 'images/client2.jpg' %}" alt="" class="box-img">
+              </div>
+              <div class="detail-box">
+                <div class="client_id">
+                  <div class="client_info">
+                    <h6>
+                      Zen Court
+                    </h6>
+                    <p>
+                      magna aliqua. Ut
+                    </p>
+                  </div>
+                  <i class="fa fa-quote-left" aria-hidden="true"></i>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box">
+              <div class="img-box">
+                <img src="{% static 'images/client1.jpg' %}" alt="" class="box-img">
+              </div>
+              <div class="detail-box">
+                <div class="client_id">
+                  <div class="client_info">
+                    <h6>
+                      LusDen
+                    </h6>
+                    <p>
+                      magna aliqua. Ut
+                    </p>
+                  </div>
+                  <i class="fa fa-quote-left" aria-hidden="true"></i>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box">
+              <div class="img-box">
+                <img src="{% static 'images/client2.jpg' %}" alt="" class="box-img">
+              </div>
+              <div class="detail-box">
+                <div class="client_id">
+                  <div class="client_info">
+                    <h6>
+                      Zen Court
+                    </h6>
+                    <p>
+                      magna aliqua. Ut
+                    </p>
+                  </div>
+                  <i class="fa fa-quote-left" aria-hidden="true"></i>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end client section -->
+  {% include 'page/footer.html' %}
+
+  <!-- jQery -->
+  <script type="text/javascript" src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <!-- bootstrap js -->
+  <script type="text/javascript" src="{% static 'js/bootstrap.js' %}"></script>
+  <!-- owl slider -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <!-- custom js -->
+  <script type="text/javascript" src="{% static 'js/custom.js' %}"></script>
+  <!-- End Google Map -->
+
+</body>
+
+</html>

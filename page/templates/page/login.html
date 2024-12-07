@@ -1,0 +1,38 @@
+{% extends 'page/main.html' %}
+{% load static %}
+{% block content %}
+<section class="service_section layout_padding">
+    <div class="service_container">
+        <div class="container ">
+            <div class="heading_container heading_center">
+                <h2>
+                    Administrative <span>Login</span>
+                </h2>
+                <p>
+                    Access the secure portal to manage platform settings, monitor user activity, and oversee service
+                    operations with ease. Designed for admins to ensure seamless platform management.
+                </p>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <form method="post">
+                        {% csrf_token %}
+                        <div class="form-group my-3">
+                            <input type="text" name="email" class="form-control" id="email" placeholder="Email or Username"
+                                required>
+                        </div>
+                        <div class="form-group my-3">
+                            <input type="text" class="form-control" name="password" id="password" placeholder="password"
+                                required>
+                        </div>
+
+                        <button type="submit" class="btn btn-secondary w-100">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- end service section -->
+{% endblock content %}
